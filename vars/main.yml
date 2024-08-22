@@ -1,0 +1,9 @@
+---
+# vars file for talos
+talos_os: '{{ ansible_system | lower }}'
+talos_arch: '{{ talos_arch_map[ansible_architecture] }}'
+talos_platform: '{{ talos_os }}-{{ talos_arch }}'
+talos_url: '{{ talos_mirror }}/v{{ talos_ver }}/talosctl-{{ talos_platform }}'
+talos_checksum: '{{ talos_checksums[talos_ver][talos_platform] }}'
+talos_installed_exe: '{{ talos_install_dir }}/talosctl-{{ talos_ver }}-{{ talos_platform }}'
+talos_link: '{{ talos_install_dir }}/talosctl'

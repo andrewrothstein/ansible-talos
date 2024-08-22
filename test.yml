@@ -1,0 +1,14 @@
+---
+- name: Testing andrewrothstein.talos role
+  hosts: all
+  tasks:
+    - name: Installing andrewrothstein.talos
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'talosctl version --client'
+      ansible.builtin.command: talosctl version --client
+      changed_when: false
+      register: 'talos_test_output'
+    - name: Output from 'talosctl version --client'
+      ansible.builtin.debug:
+        msg: '{{ talos_test_output.stdout }}'
