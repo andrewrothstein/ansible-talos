@@ -1,6 +1,6 @@
 ---
 # defaults file for talos
-talos_ver: 1.7.6
+talos_ver: 1.8.0
 talos_mirror: https://github.com/siderolabs/talos/releases/download
 talos_arch_map:
   aarch64: arm64
@@ -26,3 +26,20 @@ talos_checksums:
     linux-armv7: sha256:79630054d306e703c2f6dd213bfcb6d7b58bf81ddfdad92547a86ed8f19c33fa
     # https://github.com/siderolabs/talos/releases/download/v1.7.6/talosctl-windows-amd64.exe
     windows-amd64: sha256:0df2ff34938abb48ee7948ca9e6357609762406cb5c7cd1f88fbcea4f0649e5f
+  1.8.0:
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-darwin-amd64
+    darwin-amd64: sha256:da28ef2d15dd2def3f79b106df78cdda32081fa682eaf5b9265f2ff3e80ea6d5
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-darwin-arm64
+    darwin-arm64: sha256:efbb2c9161b9d6b0c1fa85f3704ac3bf9f8abb6321b07e9d20afb27b6cff8ee1
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-freebsd-amd64
+    freebsd-amd64: sha256:c5df13be5b74e4f6b9ab8e9063a4694205144b1295b6e5f04ec222a95163f2fe
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-freebsd-arm64
+    freebsd-arm64: sha256:d371180541b8be9d7f93e467f1118abcefd9ce07f0f11c7f35af542d0b8be487
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-linux-amd64
+    linux-amd64: sha256:e15f78aaf08b613c797ef350051b26271609890631ce51e50907f6348ac2d823
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-linux-arm64
+    linux-arm64: sha256:ab0880cbc0da9566b4d0d0dbaf9cef5a567d03fa282f95d3de22e03989937c73
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-linux-armv7
+    linux-armv7: sha256:5806bc4a10d219f71254407d151d451d0751a78f0e5014ddbe456ee6f8e95b5a
+    # https://github.com/siderolabs/talos/releases/download/v1.8.0/talosctl-windows-amd64.exe
+    windows-amd64: sha256:0d57625372bf5bd05eb0a5c7df9966c7def243fd569c1076566c53cbee820801
